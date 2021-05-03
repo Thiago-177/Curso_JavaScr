@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Itamaraty</title>
+</head>
+<body>
+    <h1>Verificação Internacional</h1>
+    Verificação de Nacionalidade: <input type='text' name='txtinfo' id='txtinfo'>
+    <input type='button' value="Verificação" onclick="descobrir()">
+    <div id="res">
+
+    </div>
+    <script>
+        function descobrir() {
+            var pais = window.document.querySelector('input#txtinfo')
+            var res =  window.document.querySelector('div#res')
+            var nacao = pais.value
+            res.innerHTML = `<p>Sua nação é <strong>${nacao}</strong></p>` 
+            if (nacao == 'Brasil') {
+                res.innerHTML = `<p>Você é Brasileiro!!</p>`
+            } else {
+                res.innerHTML = `<p>Eu so lamento, você é estrangeiro!</p>`
+            }
+            res.innerHTML += `Bem vindo ao <strong>Brasil</strong>`
+        }
+    </script>
+</body>
+</html>
