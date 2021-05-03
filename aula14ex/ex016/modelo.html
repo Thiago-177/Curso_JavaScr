@@ -9,14 +9,30 @@
 </head>
 <body>
     <header>
-        <h1>Contando Passos</h1>
+        <h1>Vamos Contar</h1>
     </header>
     <section>
         <div>
-            testando...
+            <p>Início:
+                <input type="number" name="txtano" id="txtstart" min="0">
+            </p>
+            
+            <p>Fim:
+                <input type="number" name="txtano" id="txtend" min="0">
+            </p>
+            
+            <p>Passo:
+                <input type="number" name="txtano" id="txtpass" min="0">
+            </p>
+
+            <p><!-- Botão -->
+                <input type="button" value="Contar" onclick="contando()">
+            </p>
+            
         </div>
-        <div>
-            Olá!
+        <div id="res">
+            
+            Preparando a contagem...
         </div>
 
     </section>
