@@ -5,7 +5,7 @@ console.log(num)
 console.log(num.length) // é o len do python
 num.sort() // ordena os elementos
 console.log(num)
-let posi = num.indexOf(9) // aqui ele busca na sua lista o valor 7 e em que posição ele esta 
+let posi = num.indexOf(7) // aqui ele busca na sua lista o valor 7 e em que posição ele esta 
 
 
 /*
